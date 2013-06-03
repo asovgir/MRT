@@ -1,2 +1,54 @@
 <!DOCTYPE html>
+
+
 <%= render 'partials/header' %>
+
+<div class="pictureframe">
+	<div id="lrgimg">
+		<div class="imagereserve">
+			<div id="imgtext"> Get Answers. Gain Insight. 
+				<br> Discuss Intelligently.
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="container">
+	<div class="category">
+		<div class="block1"></div>
+		<div class="block2">	
+			<ul id="search">	
+				<form class="navbar-search" action = "" method="GET">
+					<input type="text" class="search-query" placeholder="Search Movie" name="q">
+				</form>
+			</ul>
+		</div>
+		<div class="block3">
+			<a href="#" onclick="javascript:displaycountValue()" class="btn btn-success">Add a Movie</a>	
+		</div>
+		<div class="arrowsandcontent">
+			<div class="leftarrowdiv">
+				<div class="leftarrow"></div>
+			</div>
+			<div class="rightarrowdiv">
+				<div class="rightarrow"></div>
+			</div>
+			<div id="my-carousel-2" class="carousel module">
+				<ul class="content_covers">
+					<li>
+						<a href="#"><%= image_tag "http://ia.media-imdb.com/images/M/MV5BMTc3MjI0MjM0NF5BMl5BanBnXkFtZTcwMTYxMTQ1OA@@._V1_SY317_CR0,0,214,317_.jpg" %></a>
+					</li>
+				</ul>
+				<ul class="content_names">
+					<li>
+						<a href="#">Argo</a>
+					</li>
+				</ul>
+			</div>		
+		</div>	
+	</div>	
+</div>
+
+
+</div> <!-- fullcontainer closing tag -->
+</html>

@@ -23,7 +23,7 @@ if (typeof Object.create !== 'function') {
 
 (function($) {
 	// ie alias
-	var headache = $.browser.msie && $.browser.version.substr(0,1)<9;
+	// var headache = $.browser.msie && $.browser.version.substr(0,1)<9;
 
 	// carousel
 	var Carousel = {
@@ -147,7 +147,7 @@ if (typeof Object.create !== 'function') {
 			nextItem = this.items.eq(this.itemIndex);
 			pos = nextItem.position();
 
-			if (headache) {
+			if (this) {
 				this.runner
 					.stop()
 					.animate({left: -pos.left}, this.options.speed, this.options.easing);
