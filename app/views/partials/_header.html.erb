@@ -1,0 +1,33 @@
+<head>
+	<title>Movie Roundtable</title>
+</head>
+
+<div class="headwrapper">
+	<header class="header">
+		<ul id="logo">
+			<li>
+				<a href="/home/"><%= image_tag "logo.jpg" %></a>
+			</li>
+		</ul>
+		<ul id="navigation">
+				<li><a href="#">Register</a>
+					<form action = "/home/register/" method = "post" id = "register">
+						<input type = "submit" value = "Create!">
+							<input type = "hidden" name = "next" value = "" />
+					</form>
+				</li>
+				<li>|</li>
+				<li><a href="#">Sign In</a>
+					<form action = "/home/accounts/login/" method = "post" id = "cork">
+						<label for = "username"> Username: </label>
+							<input type = "text" name = "username" value = "" id = "username">
+						<label for = "password"> Password: </label>
+							<input type = "password" name = "password" value = "" id = "password">
+							<br><a href = "/home/forgot/" class="forgotPassword"> Forgot Password? </a>
+						<input type = "submit" value = "Login" class="submitLogin"/>
+							<input type = "hidden" name = "next" value = "" />
+					</form>
+				</li>
+		</ul>
+	</header>
+</div>

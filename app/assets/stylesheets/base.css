@@ -1,0 +1,262 @@
+html, body, h1, h2, h3, h4, h5, h6{
+margin:0;
+padding:0;
+background:white;
+border:0px solid yellow;
+font-family:'Source Sans Pro', sans-serif;
+font-weight:300;
+color:white;
+}
+.fullwrapper{
+/*background-size*/
+-webkit-background-size:/*@@prefixmycss->No equivalent*/
+:;
+/*background-size*/
+-webkit-background-size:/*@@prefixmycss->No equivalent*/;
+   -moz-background-size:contain;
+     -o-background-size:/*@@prefixmycss->No equivalent*/;
+        background-size:contain;
+/*@@prefixmycss->No equivalent*/
+background-repeat:no-repeat;
+position:fixed;
+margin-left:32%;
+background-position:top center;
+}
+.headwrapper{
+background:white;
+width:100%;
+border:0px solid green;
+}
+/* header */	
+	
+.header{
+height:6em;
+width:100%;
+position:relative;
+border:0px solid #969696;
+background:black;
+}
+.header ul{
+list-style-type:none;
+display:inline-block;
+float:left;
+position:relative;
+}
+#logo{
+width:25%;
+position:relative;
+border:0px solid #969696;
+left:1.25%;
+margin-top:1.2em;
+}
+#search{
+margin-top:35px;
+width:100%;
+border:0px solid #969696;
+margin-left:-4.2%;
+}
+#searchbox{
+color:gray;
+border:1px solid #969696;
+/*border-radius*/
+-webkit-border-radius:5px;
+   -moz-border-radius:5px;
+        border-radius:5px;
+background:url(Images/mag_glass.jpg) no-repeat 5px 1px;
+outline:none;
+padding-left:6%;
+width:200px;
+text-align:center;
+}
+#navigation{
+width:25%;
+position:absolute;
+margin-top:1em;
+right:5.5%;
+text-align:right;
+border:0px solid blue;
+z-index:100;
+margin-top:1.5em;
+}
+#navigation li{
+display:inline-block;
+font-size:22px;
+border:0px solid red;
+padding:10px;
+}
+#navigation a:link{
+color:white;
+text-decoration:none;
+}
+#navigation a:visited{
+color:white;
+text-decoration:none;
+}
+#navigation a:hover{
+color:#33CCFF;
+}
+#navigation a:active{
+color:white;
+}
+#navigation #register{
+text-align:left;
+position:absolute;
+border:0px solid yellow;
+width:250px;
+min-height:40px;
+/*min height of DIV should be set to at least 2x the width of the arrow*/
+background:black;
+color:white;
+padding:5px;
+word-wrap:break-word;
+/*border-radius*/
+-webkit-border-radius:5px;
+   -moz-border-radius:5px;
+        border-radius:5px;
+margin-top:15px;
+margin-bottom:2em;
+padding-bottom:27px;
+padding-left:30px;
+margin-left:-167px;
+font-size:20px;
+}
+.registerDropdownMenu{
+background:#2f2f2f;
+width:290px;
+margin-left:20px;
+}
+#navigation #cork{
+text-align:left;
+position:absolute;
+border:0px solid yellow;
+width:275px;
+min-height:40px;
+/*min height of DIV should be set to at least 2x the width of the arrow*/
+background:black;
+color:white;
+word-wrap:break-word;
+/*border-radius*/
+-webkit-border-radius:5px;
+   -moz-border-radius:5px;
+        border-radius:5px;
+margin-top:0px;
+margin-bottom:2em;
+margin-left:-218px;
+padding-top:20px;
+padding-bottom:30px;
+padding-left:25px;
+padding-right:25px;
+font-size:24px;
+}
+#navigation #textfield{
+background:white;
+outline:none;
+color:white;
+padding-left:10px;
+margin-bottom:7px;
+margin-left:0px;
+border:0px solid #6f6f6f;
+}
+#navigation .button{
+background:white;
+outline:none;
+color:black;
+font-weight:bold;
+/* Background Gradients */
+background:#2f2f2f;
+/*linear-gradient*/
+background:-webkit-gradient(linear,left top,left bottom,from(#2f2f2f),color-stop(#969696,0.5),color-stop(#969696,0.51),to(#2f2f2f));
+background:-webkit-linear-gradient(top, #2f2f2f, #969696 50%, #969696 51%, #2f2f2f);
+background:   -moz-linear-gradient(top, #2f2f2f, #969696 50%, #969696 51%, #2f2f2f);
+background:     -o-linear-gradient(top, #2f2f2f, #969696 50%, #969696 51%, #2f2f2f);
+background:        linear-gradient(top, #2f2f2f, #969696 50%, #969696 51%, #2f2f2f);
+background:-webkit-gradient(linear, left top, left bottom, color-stop(0, #2f2f2f), color-stop(.5, black), to(#2f2f2f));
+/* Border Radius */
+/*border-radius*/
+-webkit-border-radius:5px;
+   -moz-border-radius:5px;
+        border-radius:5px;
+border:0px solid black;
+border-top:0px solid #2f2f2f;
+/* Test shadow */
+text-shadow:2px 2px 2px black;
+/* Box Shadow */
+/*box-shadow*/
+-webkit-box-shadow:0 100px 3px black;
+   -moz-box-shadow:0 100px 3px black;
+        box-shadow:0 100px 3px black;
+cursor:pointer;
+}
+.registerHeading{
+margin-top:40px;
+margin-left:36%;
+font-size:36px;
+color:black;
+width:600px;
+}
+.registerform{
+font-size:28px;
+color:black;
+margin-left:100px;
+margin-top:40px;
+list-style-type:none;
+width:360px;
+}
+.loginHeading{
+margin-top:40px;
+margin-left:42%;
+font-size:36px;
+color:black;
+width:600px;
+}
+.loginform{
+font-size:28px;
+color:black;
+margin-top:40px;
+list-style-type:none;
+width:360px;
+}
+.loginform p{
+margin-top:-15px;
+}
+.addMoviePage{
+font-size:36px;
+color:black;
+margin-top:40px;
+list-style-type:none;
+width:860px;
+margin-left:30%;
+text-align:center;
+}
+.moviePopupTitle{
+font-size:46px;
+}
+.addMovieButton{
+margin-top:50px;
+}
+.searchHeading{
+margin-top:40px;
+text-align:center;
+font-size:36px;
+color:black;
+width:100%;
+}
+.searchBody{
+font-size:28px;
+color:black;
+list-style-type:none;
+width:100%;
+text-align:center;
+}
+.searchBody ul li{
+list-style-type:none;
+margin-left:-30px;
+margin-right:auto;
+text-align:center;
+}
+.searchBody ul li:nth-child(even){
+margin-bottom:50px;
+}
+.error{
+font-size:28px	color: red;
+}

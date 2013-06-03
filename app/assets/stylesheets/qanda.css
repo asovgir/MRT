@@ -1,0 +1,738 @@
+html, body, h1, h2, h3, h4, h5, h6{
+margin:0;
+padding:0;
+background:white;
+border:0px solid yellow;
+font-family:'Source Sans Pro', sans-serif; font-weight:300;
+height:100%;
+}
+
+hr{
+height:1px;
+border:0;
+border-top:1px solid #222222;
+width:102%;
+margin-left:-25px;
+}
+
+/* header */	
+	
+.headwrapper{
+background:white;
+width:100%;
+	border:0px solid green;
+}
+/* header */	
+	
+.header{
+height:98px;
+width:100%;
+position:relative;
+border:0px solid #969696;
+background:black;
+}
+.header ul{
+list-style-type:none;
+display:inline-block;
+float:left;
+position:relative;
+}
+#logo{
+width:25%;
+position:relative;
+border:0px solid #969696;
+left:1.25%;
+margin-top:1.2em;
+}
+
+.search{
+width:42%;
+border:0px solid red;
+text-align:center;
+position:absolute;
+margin-top:1.9em;
+}
+
+#searchbox{
+color:gray;
+border:1px solid #969696;
+/*border-radius*/
+-webkit-border-radius:5px;
+   -moz-border-radius:5px;
+        border-radius:5px;
+background:url(Images/mag_glass.jpg) no-repeat 5px 1px;
+outline:none;
+padding-left:6%;
+width:200px;
+text-align:center;
+}
+#navigation{
+width:25%;
+position:absolute;
+right:5.5%;
+text-align:right;
+border:0px solid blue;
+z-index:100;
+margin-top:1.5em;
+color:white;
+}
+#navigation li{
+display:inline-block;
+font-size:22px;
+border:0px solid red;
+padding:10px;
+}
+#navigation a:link{
+color:white;
+text-decoration:none;
+}
+#navigation a:visited{
+color:white;
+text-decoration:none;
+}
+#navigation a:hover{
+color:#33CCFF;
+}
+#navigation a:active{
+color:white;
+}
+#navigation #register{
+text-align:left;
+position:absolute;
+border:0px solid yellow;
+width:250px;
+min-height:40px;
+/*min height of DIV should be set to at least 2x the width of the arrow*/
+background:black;
+color:white;
+padding:5px;
+word-wrap:break-word;
+/*border-radius*/
+-webkit-border-radius:5px;
+   -moz-border-radius:5px;
+        border-radius:5px;
+margin-top:15px;
+margin-bottom:2em;
+padding-bottom:27px;
+padding-left:30px;
+margin-left:-167px;
+font-size:20px;
+}
+
+.registerDropdownMenu{
+background:#2f2f2f;
+width:290px;
+margin-left:20px;
+}
+#navigation #cork{
+text-align:left;
+position:absolute;
+border:0px solid yellow;
+width:275px;
+min-height:40px;
+/*min height of DIV should be set to at least 2x the width of the arrow*/
+background:black;
+color:white;
+word-wrap:break-word;
+/*border-radius*/
+-webkit-border-radius:5px;
+   -moz-border-radius:5px;
+        border-radius:5px;
+margin-top:0px;
+margin-bottom:2em;
+margin-left:-218px;
+padding-top:20px;
+padding-bottom:30px;
+padding-left:25px;
+padding-right:25px;
+font-size:24px;
+}
+
+#navigation #textfield{
+background:white;
+outline:none;
+color:white;
+padding-left:10px;
+margin-bottom:7px;
+margin-left:0px;
+border:0px solid #6f6f6f;
+}
+#navigation .button{
+background:white;
+outline:none;
+color:black;
+font-weight:bold;
+/* Background Gradients */
+background:#2f2f2f;
+/*linear-gradient*/
+background:-webkit-gradient(linear,left top,left bottom,from(#2f2f2f),color-stop(#969696,0.5),color-stop(#969696,0.51),to(#2f2f2f));
+background:-webkit-linear-gradient(top, #2f2f2f, #969696 50%, #969696 51%, #2f2f2f);
+background:   -moz-linear-gradient(top, #2f2f2f, #969696 50%, #969696 51%, #2f2f2f);
+background:     -o-linear-gradient(top, #2f2f2f, #969696 50%, #969696 51%, #2f2f2f);
+background:        linear-gradient(top, #2f2f2f, #969696 50%, #969696 51%, #2f2f2f);
+background:-webkit-gradient(linear, left top, left bottom, color-stop(0, #2f2f2f), color-stop(.5, black), to(#2f2f2f));
+/* Border Radius */
+/*border-radius*/
+-webkit-border-radius:5px;
+   -moz-border-radius:5px;
+        border-radius:5px;
+border:0px solid black;
+border-top:0px solid #2f2f2f;
+/* Test shadow */
+text-shadow:2px 2px 2px black;
+/* Box Shadow */
+/*box-shadow*/
+-webkit-box-shadow:0 100px 3px black;
+   -moz-box-shadow:0 100px 3px black;
+        box-shadow:0 100px 3px black;
+cursor:pointer;
+}
+
+.forgotPassword{
+font-size:18px;
+}
+
+.submitLogin{
+margin-left:65px;
+margin-top: 10px;
+}
+
+/* Body */
+
+
+
+
+.questions{
+	width:38.5%;
+	display:inline-block;
+	border-right:1px solid #222222;
+	float:left;
+	font-family:'Source Sans Pro', sans-serif; font-weight:300;
+	font-weight:300;
+	height: auto !important;
+    min-height: 100%;
+    height: 100%;
+	bottom:0;
+	background:#EEE;
+	}
+	
+.textareadiv{
+}
+.textarea{
+overflow:auto;
+vertical-align:top;
+margin-left:5px;
+height:40px;
+}
+
+
+
+#submittextbutton{
+float:right;
+margin-top:5px;
+margin-right:12px;
+}
+#mask{
+display:none;
+background:#000;
+position:fixed;
+left:0;
+top:0;
+width:100%;
+height:100%;
+opacity:0.5;
+z-index:99;
+}
+/* You can customize to your needs  */
+.login-popup{
+display:none;
+font-size:14px;
+background:#333;
+padding:10px;
+width:640px;
+height:450px;
+border:1px solid black;
+float:left;
+font-size:1.2em;
+position:fixed;
+top:50%;
+left:50%;
+z-index:100;
+/*box-shadow*/
+-webkit-box-shadow:0px 0px 20px #333333;
+   -moz-box-shadow:0px 0px 20px #333333;
+        box-shadow:0px 0px 20px #333333;
+/* CSS3 */
+/* Firefox */
+/* Safari, Chrome */
+/*border-radius*/
+-webkit-border-radius:13px 13px 13px 13px;
+   -moz-border-radius:13px 13px 13px 13px;
+        border-radius:13px 13px 13px 13px;
+:;
+}
+.login-popup a{
+color:white;
+font-size:14px;
+text-decoration:none;
+background:#333;
+}
+.questionPopupTitle{
+background:#333333;
+text-align:left;
+font-size:32px;
+text-align:center;
+width:650px;
+font-weight:bold;
+}
+.questionPopupForm{
+left:5px;
+}
+.questionPopupForm p{
+margin-top:20px;
+margin-left:10px;
+background:#333333;
+float:left;
+text-align:left;
+font-size:24px;
+}
+.questionPopupForm p:first-child{
+margin-top:40px;
+margin-left:10px;
+background:#333333;
+float:left;
+text-align:left;
+font-size:24px;
+}
+
+.questionButtonandDropdown{
+position:relative;
+}
+
+.movietitle{
+font-size:36px;
+color:black;
+width:60%;
+height:auto;
+margin-left:41px;
+vertical-align:middle;
+margin-top:20px;
+font-family:'Source Sans Pro', sans-serif; font-weight:300;
+font-weight:bold;
+text-shadow:2px 2px 2px #969696;
+border:0px solid yellow;
+margin-bottom:25px;
+}
+
+
+.questionbutton{
+	height:20px;
+	line-height:20px;
+	display: inline-block;
+	font-weight:bold;
+	text-decoration:none;
+	font-size:12px;
+	border:0px solid green;
+	position:absolute;	
+width:100%;
+text-align:right;
+right:20px;
+top:0;
+	}
+
+.addQuestionWindow{
+text-align:left;
+position:absolute;
+border:0px solid yellow;
+width:398px;
+min-height:40px;
+/*min height of DIV should be set to at least 2x the width of the arrow*/
+background:black;
+color:white;
+padding-right:35px;
+padding-left:35px;
+word-wrap:break-word;
+/*border-radius*/
+-webkit-border-radius:5px;
+   -moz-border-radius:5px;
+        border-radius:5px;
+margin-bottom:2em;
+padding-top:10px;
+padding-bottom:10px;
+font-size:28px;
+z-index:999;
+left:74%;
+top:45px;
+}
+
+fieldset{
+border:none;
+}
+form.signin .textbox label{
+display:block;
+padding-bottom:7px;
+}
+form.signin .textbox span{
+display:block;
+}
+form.signin p, form.signin span{
+color:#999;
+font-size:11px;
+line-height:18px;
+}
+form.signin .textbox input{
+background:#666666;
+border-bottom:1px solid #333;
+border-left:1px solid #000;
+border-right:1px solid #333;
+border-top:1px solid #000;
+color:#fff;
+/*border-radius*/
+-webkit-border-radius:3px 3px 3px 3px;
+   -moz-border-radius:3px 3px 3px 3px;
+        border-radius:3px 3px 3px 3px;
+font:13px Arial, Helvetica, sans-serif;
+padding:6px 6px 4px;
+width:200px;
+}
+form.signin input:-moz-placeholder{
+color:#bbb;
+text-shadow:0 0 2px #000;
+}
+form.signin input::-webkit-input-placeholder{
+color:#bbb;
+text-shadow:0 0 2px #000;
+}
+.questionvotecontainer{
+border:0px solid purple;
+text-align:left;
+float:left;
+display:inline-block;
+width:100%;
+margin-bottom:4px;
+min-width:840;
+}
+.votecounter{
+width:12%;
+height:50px;
+border:0px solid yellow;
+text-align:center;
+position:relative;
+display:inline-block;
+float:left;
+font-size:32px;
+}
+.votearrowdiv{
+position:relative;
+float:left;
+min-height:20px;
+border:0px solid gray;
+display:inline-block;
+min-width:30px;
+margin-left:-10px;
+margin-top;-5px;
+}
+
+.uparrow{
+width:0px;
+height:0px;
+border-left: 13px solid transparent;
+border-right: 13px solid transparent;
+border-bottom: 13px solid black;
+position:relative;
+cursor:pointer;
+}
+
+.uparrow, x:-moz-any-link, x:default {
+    top:5px;
+	position:absolute;
+}
+
+.uparrowBlue{
+width:0px;
+height:0px;
+border-left: 13px solid transparent;
+border-right: 13px solid transparent;
+border-bottom: 13px solid #51a351;
+position:relative;
+cursor:pointer;
+}
+
+.uparrowBlue, x:-moz-any-link, x:default {
+    top:5px;
+	position:absolute;
+}
+
+.downarrow{
+width:0px;
+height:0px;
+border-left: 13px solid transparent;
+border-right: 13px solid transparent;
+border-top: 13px solid black;
+position:absolute;
+cursor:pointer;
+margin-top:5px;
+}
+
+.downarrow, x:-moz-any-link, x:default {
+    margin-top: 25px;
+}
+
+.downarrowBlue{
+width:0px;
+height:0px;
+border-left: 13px solid transparent;
+border-right: 13px solid transparent;
+border-top: 13px solid #51a351;
+position:relative;
+cursor:pointer;
+margin-top:-5px;
+}
+
+.downarrowBlue, x:-moz-any-link, x:default {
+    margin-top: 25px;
+}
+
+.question{
+text-align:left;
+	width:101%;
+display:inline-block;
+border:0px solid green;
+font-size:16px;
+font-weight:bold;
+font-family:'Source Sans Pro', sans-serif; font-weight:300;
+margin-left:-10px;
+padding-bottom:20px;
+float:left;
+min-width:10px;
+overflow:scroll;
+overflow-x:hidden;
+}
+	
+.questionHover{
+background-color:#a5a5a5;
+width:3000px;
+}
+
+.question ul li{
+list-style-type:none;
+border:0px solid red;
+width:107%;
+min-height:30px;
+margin-left:-28px;
+overflow:auto;
+position:relative;
+font-size:18px;
+overflow-x:hidden;
+}
+
+.upvotearrow{
+border-bottom:14px solid black;
+border-left:14px solid transparent;
+border-right:14px solid transparent;
+display:inline-block;
+margin-top:5px;
+position:absolute;
+top:0px;
+z-index:50;
+}
+.downvotearrow{
+width:0px;
+height:0px;
+border-top:14px solid #969696;
+border-left:14px solid transparent;
+border-right:14px solid transparent;
+display:inline-block;
+position:absolute;
+margin-top:26px;
+z-index:50;
+}
+.numbercount{
+font-size:24px;
+font-weight:bold;
+}
+
+.actualQuestion{ 
+position:static;
+float:right;
+width:82%;
+}
+
+.linkQuestion a{
+color:black;
+text-decoration:none;
+overflow:auto;  
+float:right; 
+border:0px solid pink;
+margin-top:5px;
+}
+
+.question a{
+	color:black;
+	display:block;
+	padding-top:5px;
+	padding-bottom:15px;;
+	}  
+
+.question a:hover{
+color:	#3C3C38;
+text-decoration:none;
+}
+.question a:active{
+color:#4488FF;
+}
+
+
+	
+.answers_outer{
+overflow:hidden;
+}
+.answers{
+width:61%;
+position:absolute;
+border:0px solid blue;
+display:inline-block;
+float:right;
+right:5px;
+overflow-y:auto;
+overflow-x:hidden;
+font-weight:300;
+}
+.answertitle{
+font-size:24px;
+margin-left:3px;
+font-weight:bold;
+border:0px solid yellow;
+}
+.answerandcomments{
+font-size:20px;
+padding-left:30px;
+margin-left:-20px;
+border:0px solid yellow;
+}
+.answerformat{
+font-size:20px;
+margin-left:20px;
+}
+.questionDescription{
+font-size:16px;
+margin-top:-10px;
+margin-left:5px;
+color:black;
+font-weight:bold;
+}
+
+.noQuestionsYet{
+font-size:24px;
+margin-left:50px;
+}
+
+.noAnswersYet{
+font-size:24px;
+}
+.answercomments{
+width:101%;
+border:0px solid green;
+font-size:18px;
+font-weight:bold;
+margin-left:-15px;
+padding-left:15px;
+font-size:13px;
+color:#666666;
+}
+
+.answer-popup{
+display:none;
+font-size:34px;
+background:#333;
+padding:10px;
+width:550px;
+height:300px;
+border:1px solid black;
+margin-top:10px;
+margin-right:100px;
+float:left;
+font-size:1.2em;
+top:50%;
+left:50%;
+z-index:999;
+/*box-shadow*/
+-webkit-box-shadow:0px 0px 20px #333333;
+   -moz-box-shadow:0px 0px 20px #333333;
+        box-shadow:0px 0px 20px #333333;
+/* CSS3 */
+/* Firefox */
+/* Safari, Chrome */
+/*border-radius*/
+-webkit-border-radius:13px 13px 13px 13px;
+   -moz-border-radius:13px 13px 13px 13px;
+        border-radius:13px 13px 13px 13px;
+:;
+}
+.answer-popup a{
+color:white;
+font-size:14px;
+text-decoration:none;
+background:#333;
+}
+.answerTextArea{
+margin-left:20px;
+margin-top:20px;
+}
+.addAnswerButton{
+margin-left:5px;
+margin-top:5px;
+}
+
+.footer{
+clear:both;
+border:1px groove #101010;
+background:#101010;
+color:White;
+padding:0;
+text-align:center;
+vertical-align:bottom;
+line-height:0px;
+margin:0;
+position:fixed;
+bottom:0px;
+width:100%;
+height:30px;
+}
+.footer ul:first-child{
+}
+.footer ul:last-child{
+}
+.footer ul li{
+display:inline-block;
+list-style-type:none;
+padding-left:5%;
+padding-right:10%;
+padding-bottom:10px;
+text-align:center;
+}
+.footer ul li a:link{
+color:white;
+text-decoration:none;
+}
+
+.footer ul li a:active{
+color:white;
+}
+
+
+@media screen and (max-width: 1095px){
+html, body{
+margin:0;
+padding:0;
+border:0px solid yellow;
+width:1100px;
+}
+.fullwrapper{
+width:1100px;
+}
+.headwrapper{
+width:1100px;
+}
+
+}

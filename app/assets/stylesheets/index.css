@@ -1,0 +1,497 @@
+html, body, h1, h2, h3, h4, h5, h6{
+margin:0;
+padding:0;
+background:white;
+border:0px solid yellow;
+font-family:'Source Sans Pro', sans-serif; font-weight:300;
+color:white;
+}
+
+.headwrapper{
+background:white;
+width:100%;
+	border:0px solid green;
+}
+/* header */	
+	
+.header{
+height:8em;
+width:100%;
+position:relative;
+border:0px solid #969696;
+background:black;
+}
+.header ul{
+list-style-type:none;
+display:inline-block;
+float:left;
+position:relative;
+}
+#logo{
+width:25%;
+position:relative;
+border:0px solid #969696;
+left:1.25%;
+margin-top:2em;
+}
+#search{
+margin-top:35px;
+width:100%;
+border:0px solid #969696;
+margin-left:-4.2%;
+}
+#searchbox{
+color:gray;
+border:1px solid #969696;
+/*border-radius*/
+-webkit-border-radius:5px;
+   -moz-border-radius:5px;
+        border-radius:5px;
+background:url(Images/mag_glass.jpg) no-repeat 5px 1px;
+outline:none;
+padding-left:6%;
+width:200px;
+text-align:center;
+}
+#navigation{
+width:25%;
+position:absolute;
+margin-top:1em;
+right:5.5%;
+text-align:right;
+border:0px solid blue;
+z-index:100;
+margin-top:2.3em;
+}
+#navigation li{
+display:inline-block;
+font-size:22px;
+border:0px solid red;
+padding:10px;
+}
+#navigation a:link{
+color:white;
+text-decoration:none;
+}
+#navigation a:visited{
+color:white;
+text-decoration:none;
+}
+#navigation a:hover{
+color:#33ccff;
+}
+#navigation a:active{
+color:white;
+}
+#navigation #register{
+text-align:left;
+position:absolute;
+border:0px solid yellow;
+width:250px;
+min-height:40px;
+/*min height of DIV should be set to at least 2x the width of the arrow*/
+background:black;
+color:white;
+padding:5px;
+word-wrap:break-word;
+/*border-radius*/
+-webkit-border-radius:5px;
+   -moz-border-radius:5px;
+        border-radius:5px;
+margin-top:15px;
+margin-bottom:2em;
+padding-bottom:27px;
+padding-left:30px;
+margin-left:-167px;
+font-size:20px;
+}
+
+.registerDropdownMenu{
+background:#2f2f2f;
+width:290px;
+margin-left:20px;
+}
+#navigation #cork{
+text-align:left;
+position:absolute;
+border:0px solid yellow;
+width:275px;
+min-height:40px;
+/*min height of DIV should be set to at least 2x the width of the arrow*/
+background:black;
+color:white;
+word-wrap:break-word;
+/*border-radius*/
+-webkit-border-radius:5px;
+   -moz-border-radius:5px;
+        border-radius:5px;
+margin-top:0px;
+margin-bottom:2em;
+margin-left:-218px;
+padding-top:20px;
+padding-bottom:30px;
+padding-left:25px;
+padding-right:25px;
+font-size:24px;
+}
+
+.forgotPassword{
+	font-size:16px;
+	}
+	
+.submitLogin {
+	float:right;
+	right:5px;
+	}
+
+#navigation #textfield{
+background:white;
+outline:none;
+color:white;
+padding-left:10px;
+margin-bottom:7px;
+margin-left:0px;
+border:0px solid #6f6f6f;
+}
+#navigation .button{
+background:white;
+outline:none;
+color:black;
+font-weight:bold;
+/* Background Gradients */
+background:#2f2f2f;
+/*linear-gradient*/
+background:-webkit-gradient(linear,left top,left bottom,from(#2f2f2f),color-stop(#969696,0.5),color-stop(#969696,0.51),to(#2f2f2f));
+background:-webkit-linear-gradient(top, #2f2f2f, #969696 50%, #969696 51%, #2f2f2f);
+background:   -moz-linear-gradient(top, #2f2f2f, #969696 50%, #969696 51%, #2f2f2f);
+background:     -o-linear-gradient(top, #2f2f2f, #969696 50%, #969696 51%, #2f2f2f);
+background:        linear-gradient(top, #2f2f2f, #969696 50%, #969696 51%, #2f2f2f);
+background:-webkit-gradient(linear, left top, left bottom, color-stop(0, #2f2f2f), color-stop(.5, black), to(#2f2f2f));
+/* Border Radius */
+/*border-radius*/
+-webkit-border-radius:5px;
+   -moz-border-radius:5px;
+        border-radius:5px;
+border:0px solid black;
+border-top:0px solid #2f2f2f;
+/* Test shadow */
+text-shadow:2px 2px 2px black;
+/* Box Shadow */
+/*box-shadow*/
+-webkit-box-shadow:0 100px 3px black;
+   -moz-box-shadow:0 100px 3px black;
+        box-shadow:0 100px 3px black;
+cursor:pointer;
+}
+/* Body */
+
+
+/* Image */
+#lrgimg{
+position:relative;
+width:100%;
+border:0px solid red;
+}
+.opac{
+max-width:100%;
+opacity:0.25;
+clear:both;
+}
+
+#imgtext{
+color:black;
+position:absolute;
+top:40px;
+left:5%;
+font-size:24px;
+font-family:'Source Sans Pro', sans-serif; font-weight:300;
+font-weight:bold;
+}
+#howitworks{
+color:white;
+position:absolute;
+bottom:0;
+left:44%;
+font-weight:bold;
+}
+/* Movie Categories */	
+.container{
+margin-bottom:50px;
+}
+
+.arrowsandcontent{
+width:97%;
+margin-left:2%;
+margin-top:70px;
+display:inline-block;
+float:left;
+border:0px solid pink;
+position:relative;
+}
+
+#my-carousel-2{
+	margin-left:33px;
+	margin-right:60px;
+	border:0px solid green;
+}
+#my-carousel-2 ul {
+    position:absolute; /* required */
+    overflow:hidden; /* required */
+    margin:0;
+    padding:0;
+    list-style:none;
+	border:0px solid red;
+	left:0px;
+	right:50px;
+}
+
+#my-carousel-2 li {
+    float:left; /* required */
+    width:200px;
+	height:200px;
+    margin:0 10px 0 0;
+	border:0px solid gray;
+}
+
+#my-carousel-2 .mask {
+    position:relative; /* required */
+    overflow:hidden; /* required */
+    width:auto; /* required */
+}
+
+#my-carousel-2 .pagination-links {
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+
+#my-carousel-2 .pagination-links li {
+    display:inline;
+}
+
+#my-carousel-2 .pagination-links li.current {
+    background:grey;
+}
+
+#my-carousel-2 .disabled {
+    color:grey;
+}
+
+#my-carousel-2 .disabled{
+	display:none;
+}
+
+#my-carousel-2:hover .disabled{
+	display:none;
+}
+
+.content_names{
+	height:50px;
+	text-align:center;
+}
+
+.category{
+position:relative;
+color:white;
+font-weight:bold;
+font-size:28px;
+margin-top:1%;
+margin-bottom:1%;
+border:0px solid orange;
+clear:left;
+font-family:'Source Sans Pro', sans-serif; font-weight:300;
+margin-bottom:20px;
+}
+
+.block1{
+width:37%;
+position:relative;
+float:left;
+border:1px solid white;
+}
+.block2{
+width:28%;
+position:relative;
+float:left;
+border:0px solid green;
+margin-bottom:10px;
+text-align:center;
+}
+.block3{
+position:relative;
+float:left;
+text-align:right;
+border:0px solid red;
+width:25%;
+padding-top:30px;
+margin-left:3.8%;
+}
+
+#movie_form ul{
+margin-top:60px;
+left:5px;
+text-align:left;
+margin-left:-35px;
+}
+#movie_form ul li{
+color:white;
+text-align:left;
+font-size:16px;
+list-style-type:none;
+margin-bottom:17px;
+}
+.addmovie-popup{
+display:none;
+background:#333;
+padding:10px;
+width:550px;
+height:330px;
+border:1px solid black;
+float:left;
+position:fixed;
+top:50%;
+left:50%;
+z-index:99999;
+/*box-shadow*/
+-webkit-box-shadow:0px 0px 20px #333333;
+   -moz-box-shadow:0px 0px 20px #333333;
+        box-shadow:0px 0px 20px #333333;
+/* CSS3 */
+/* Firefox */
+/* Safari, Chrome */
+/*border-radius*/
+-webkit-border-radius:13px 13px 13px 13px;
+   -moz-border-radius:13px 13px 13px 13px;
+        border-radius:13px 13px 13px 13px;
+}
+.moviePopupTitle{
+background:#333333;
+text-align:left;
+font-size:32px;
+padding-left:200px;
+font-weight:bold;
+}
+.loginform p{
+margin-left:10px;
+background:#333333;
+float:left;
+text-align:left;
+font-size:24px;
+}
+.addMovieButton{
+margin-top:210px;
+position:absolute;
+margin-left:15%;
+}
+#mask{
+display:none;
+background:#000;
+position:fixed;
+left:0;
+top:0;
+z-index:10;
+width:100%;
+height:100%;
+opacity:0.5;
+z-index:999;
+}
+.content ul li a:link{
+color:black;
+text-decoration:none;
+}
+.content ul li a:visited{
+color:black;
+text-decoration:none;
+}
+.content ul li a:hover{
+color:#969696;
+}
+.content ul li a:active{
+color:black;
+}
+
+
+#prevArrow{
+display:block;
+background: url(http://i.imgur.com/ZYWaZxw.gif) no-repeat;
+background-position:0 0px;
+border:0px solid red;
+width:50px;
+height:50px;
+left:-15px;
+position:absolute;
+top:80px;
+}
+
+#prevArrow:hover{
+display:block;
+background: url(http://i.imgur.com/ZYWaZxw.gif) no-repeat;
+background-position:-4px -52px;
+}
+
+#nextArrow{
+display:block;
+background: url(http://i.imgur.com/ZYWaZxw.gif) no-repeat;
+background-position:-173px 0px;
+border:0px solid red;
+width:50px;
+height:50px;
+right:9px;
+position:absolute;
+top:80px;
+}
+
+#nextArrow:hover{
+display:block;
+background: url(http://i.imgur.com/ZYWaZxw.gif) no-repeat;
+background-position:-172px -52px;
+}
+
+/* Footer */	
+	
+.footer{
+clear:both;
+background:white;
+color:black;
+padding:0;
+text-align:center;
+vertical-align:bottom;
+line-height:0px;
+margin:0;
+position:fixed;
+bottom:0px;
+width:100%;
+height:55px;
+margin-top:650px;
+}
+
+.footer ul li{
+display:inline-block;
+list-style-type:none;
+padding-left:5%;
+padding-right:10%;
+padding-bottom:10px;
+padding-top:10px;
+text-align:center;
+font-size:36px;
+}
+.footer ul li a:link{
+color:blue;
+text-decoration:none;
+}
+
+
+@media screen and (max-width: 1095px){
+html, body, p, h1, h2, h3, h4, h5, h6{
+margin:0;
+padding:0;
+border:0px solid yellow;
+}
+.fullwrapper{
+width:1100px;
+}
+.headwrapper{
+width:1100px;
+}
+
+}
