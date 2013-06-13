@@ -24,7 +24,26 @@
 			</ul>
 		</div>
 		<div class="block3">
-			<a href="#" onclick="javascript:displaycountValue()" class="btn btn-success">Add a Movie</a>	
+			<div id="lightbox-wrapper">
+				<a href="#login-box" class="login-window">Add Movie</a>
+
+				<div id="login-box" class="login-popup">
+				        <a href="#" class="close">x</a>
+				          <form method="post" class="movieLightbox" action="#">
+				                <%= form_for(@movie) do |f| %>
+									<%= f.label :Title %><br>
+									<%= f.text_field :title %><br>
+									<%= f.label :description %><br>
+									<%= f.text_area :description %>
+									<p>
+										<%= f.submit "Submit", class: "btn btn-primary" %>
+									</p>
+								<% end %>    
+				          </form>
+				</div>
+			</div>
+
+
 		</div>
 		<div class="arrowsandcontent">
 			<div class="leftarrowdiv">
@@ -37,18 +56,34 @@
 				<ul class="content_covers">
 					<li>
 						<a href="#"><%= image_tag "http://ia.media-imdb.com/images/M/MV5BMTc3MjI0MjM0NF5BMl5BanBnXkFtZTcwMTYxMTQ1OA@@._V1_SY317_CR0,0,214,317_.jpg" %></a>
+					</li><li>
+						<a href="#"><%= image_tag "http://ia.media-imdb.com/images/M/MV5BMTc3MjI0MjM0NF5BMl5BanBnXkFtZTcwMTYxMTQ1OA@@._V1_SY317_CR0,0,214,317_.jpg" %></a>
+					</li><li>
+						<a href="#"><%= image_tag "http://ia.media-imdb.com/images/M/MV5BMTc3MjI0MjM0NF5BMl5BanBnXkFtZTcwMTYxMTQ1OA@@._V1_SY317_CR0,0,214,317_.jpg" %></a>
 					</li>
 				</ul>
+				
 				<ul class="content_names">
-					<li>
-						<a href="#">Argo</a>
-					</li>
+					<%= @movies.each do |movie| %>
+						<li><%= link_to (movie.title), movie_path(movie.id) %></li>
+					<% end %>
 				</ul>
+				
 			</div>		
 		</div>	
+
 	</div>	
+
 </div>
 
 
+
 </div> <!-- fullcontainer closing tag -->
+
+
+
+
+
+
+
 </html>

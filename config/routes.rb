@@ -1,6 +1,10 @@
 MRT::Application.routes.draw do
 
   get "movies/index"
+
+  resources :movies
+
+  match '/movies/index', to: 'movies#index'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
