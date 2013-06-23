@@ -29,21 +29,19 @@
 
 				<div id="login-box" class="login-popup">
 				        <a href="#" class="close">x</a>
-				          <form method="post" class="movieLightbox" action="#">
 				                <%= form_for(@movie) do |f| %>
 									<%= f.label :Title %><br>
 									<%= f.text_field :title %><br>
 									<%= f.label :description %><br>
 									<%= f.text_area :description %>
+									<%= f.file_field :avatar %>
 									<p>
 										<%= f.submit "Submit", class: "btn btn-primary" %>
 									</p>
 								<% end %>    
-				          </form>
 				</div>
 			</div>
-
-
+ 
 		</div>
 		<div class="arrowsandcontent">
 			<div class="leftarrowdiv">
@@ -54,9 +52,9 @@
 			</div>
 			<div id="my-carousel-2" class="carousel module">
 				<ul class="content_covers">
-					<li>
-						<a href="#"><%= image_tag "http://ia.media-imdb.com/images/M/MV5BMTc3MjI0MjM0NF5BMl5BanBnXkFtZTcwMTYxMTQ1OA@@._V1_SY317_CR0,0,214,317_.jpg" %></a>
-					</li>
+					<%= @movies.each do |movie| %>
+						<li><%= link_to image_tag(movie.avatar), movie_path(movie.id) %></li>
+					<% end %>
 				</ul>
 				
 				<ul class="content_names">
