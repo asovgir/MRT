@@ -1,8 +1,15 @@
 <div style="color:black;">
+
+<section id="summary" style="width:45%; align:left; position:absolute;">
 <%= @movie.title %>
 <p>
 <%= @movie.description %>
-<p>
-<%= image_tag @movie.avatar %>
 </p>
+</section>
+
+<section id="explanation" style="width:45%; right:0; position:absolute;">
+<iframe src="http://www.w3schools.com" style="width:100%; height:1000px;">
+  <p>Your browser does not support iframes.</p>
+</iframe>
+</section>
 </div>
