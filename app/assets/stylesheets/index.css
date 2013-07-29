@@ -348,7 +348,6 @@ text-align:center;
 .block3{
 position:relative;
 float:left;
-text-align:right;
 border:0px solid red;
 width:25%;
 padding-top:30px;
@@ -372,7 +371,7 @@ margin-bottom:17px;
 display:none;
 background:#333;
 padding:10px;
-width:220px;
+width:430px;
 height:600px;
 border:1px solid black;
 float:left;

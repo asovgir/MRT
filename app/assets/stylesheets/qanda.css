@@ -1,4 +1,4 @@
-html, body, h1, h2, h3, h4, h5, h6{
+/* html, body, h1, h2, h3, h4, h5, h6{
 margin:0;
 padding:0;
 background:white;
@@ -15,14 +15,14 @@ width:102%;
 margin-left:-25px;
 }
 
-/* header */	
+ header 	
 	
 .headwrapper{
 background:white;
 width:100%;
 	border:0px solid green;
 }
-/* header */	
+ header 	
 	
 .header{
 height:98px;
@@ -56,7 +56,7 @@ margin-top:1.9em;
 #searchbox{
 color:gray;
 border:1px solid #969696;
-/*border-radius*/
+border-radius
 -webkit-border-radius:5px;
    -moz-border-radius:5px;
         border-radius:5px;
@@ -102,12 +102,12 @@ position:absolute;
 border:0px solid yellow;
 width:250px;
 min-height:40px;
-/*min height of DIV should be set to at least 2x the width of the arrow*/
+min height of DIV should be set to at least 2x the width of the arrow
 background:black;
 color:white;
 padding:5px;
 word-wrap:break-word;
-/*border-radius*/
+border-radius
 -webkit-border-radius:5px;
    -moz-border-radius:5px;
         border-radius:5px;
@@ -130,11 +130,11 @@ position:absolute;
 border:0px solid yellow;
 width:275px;
 min-height:40px;
-/*min height of DIV should be set to at least 2x the width of the arrow*/
+min height of DIV should be set to at least 2x the width of the arrow
 background:black;
 color:white;
 word-wrap:break-word;
-/*border-radius*/
+border-radius
 -webkit-border-radius:5px;
    -moz-border-radius:5px;
         border-radius:5px;
@@ -162,26 +162,26 @@ background:white;
 outline:none;
 color:black;
 font-weight:bold;
-/* Background Gradients */
+ Background Gradients 
 background:#2f2f2f;
-/*linear-gradient*/
+linear-gradient
 background:-webkit-gradient(linear,left top,left bottom,from(#2f2f2f),color-stop(#969696,0.5),color-stop(#969696,0.51),to(#2f2f2f));
 background:-webkit-linear-gradient(top, #2f2f2f, #969696 50%, #969696 51%, #2f2f2f);
 background:   -moz-linear-gradient(top, #2f2f2f, #969696 50%, #969696 51%, #2f2f2f);
 background:     -o-linear-gradient(top, #2f2f2f, #969696 50%, #969696 51%, #2f2f2f);
 background:        linear-gradient(top, #2f2f2f, #969696 50%, #969696 51%, #2f2f2f);
 background:-webkit-gradient(linear, left top, left bottom, color-stop(0, #2f2f2f), color-stop(.5, black), to(#2f2f2f));
-/* Border Radius */
-/*border-radius*/
+ Border Radius 
+border-radius
 -webkit-border-radius:5px;
    -moz-border-radius:5px;
         border-radius:5px;
 border:0px solid black;
 border-top:0px solid #2f2f2f;
-/* Test shadow */
+ Test shadow 
 text-shadow:2px 2px 2px black;
-/* Box Shadow */
-/*box-shadow*/
+ Box Shadow 
+box-shadow
 -webkit-box-shadow:0 100px 3px black;
    -moz-box-shadow:0 100px 3px black;
         box-shadow:0 100px 3px black;
@@ -197,7 +197,7 @@ margin-left:65px;
 margin-top: 10px;
 }
 
-/* Body */
+ Body 
 
 
 
@@ -243,40 +243,7 @@ height:100%;
 opacity:0.5;
 z-index:99;
 }
-/* You can customize to your needs  */
-.login-popup{
-display:none;
-font-size:14px;
-background:#333;
-padding:10px;
-width:640px;
-height:450px;
-border:1px solid black;
-float:left;
-font-size:1.2em;
-position:fixed;
-top:50%;
-left:50%;
-z-index:100;
-/*box-shadow*/
--webkit-box-shadow:0px 0px 20px #333333;
-   -moz-box-shadow:0px 0px 20px #333333;
-        box-shadow:0px 0px 20px #333333;
-/* CSS3 */
-/* Firefox */
-/* Safari, Chrome */
-/*border-radius*/
--webkit-border-radius:13px 13px 13px 13px;
-   -moz-border-radius:13px 13px 13px 13px;
-        border-radius:13px 13px 13px 13px;
-:;
-}
-.login-popup a{
-color:white;
-font-size:14px;
-text-decoration:none;
-background:#333;
-}
+
 .questionPopupTitle{
 background:#333333;
 text-align:left;
@@ -346,13 +313,13 @@ position:absolute;
 border:0px solid yellow;
 width:398px;
 min-height:40px;
-/*min height of DIV should be set to at least 2x the width of the arrow*/
+min height of DIV should be set to at least 2x the width of the arrow
 background:black;
 color:white;
 padding-right:35px;
 padding-left:35px;
 word-wrap:break-word;
-/*border-radius*/
+border-radius
 -webkit-border-radius:5px;
    -moz-border-radius:5px;
         border-radius:5px;
@@ -387,7 +354,7 @@ border-left:1px solid #000;
 border-right:1px solid #333;
 border-top:1px solid #000;
 color:#fff;
-/*border-radius*/
+border-radius
 -webkit-border-radius:3px 3px 3px 3px;
    -moz-border-radius:3px 3px 3px 3px;
         border-radius:3px 3px 3px 3px;
@@ -656,14 +623,14 @@ font-size:1.2em;
 top:50%;
 left:50%;
 z-index:999;
-/*box-shadow*/
+box-shadow
 -webkit-box-shadow:0px 0px 20px #333333;
    -moz-box-shadow:0px 0px 20px #333333;
         box-shadow:0px 0px 20px #333333;
-/* CSS3 */
-/* Firefox */
-/* Safari, Chrome */
-/*border-radius*/
+ CSS3 
+ Firefox 
+ Safari, Chrome 
+border-radius
 -webkit-border-radius:13px 13px 13px 13px;
    -moz-border-radius:13px 13px 13px 13px;
         border-radius:13px 13px 13px 13px;
@@ -735,4 +702,4 @@ width:1100px;
 width:1100px;
 }
 
-}
+} */
