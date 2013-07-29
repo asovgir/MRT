@@ -21,4 +21,22 @@ class MoviesController < ApplicationController
 	def show
 		@movie = Movie.find(params[:id])
 	end
+
+	def admin
+		authenticate
+		@movies = Movie.all
+	end
+
+	def destroy
+		authenticate
+		@movie = Movie.find(params[:id])
+		@movie.destroy
+		redirect_to admin_path
+	end
+
+	def authenticate
+		authenticate_or_request_with_http_basic do |username, password|
+			username == "pathways" && password == ""
+		end
+	end
 end

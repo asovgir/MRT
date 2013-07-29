@@ -276,7 +276,7 @@ position:relative;
 #my-carousel-2 li {
     float:left; /* required */
     width:200px;
-	height:200px;
+	height:286px;
     margin:0 10px 0 0;
 	border:0px solid gray;
 }

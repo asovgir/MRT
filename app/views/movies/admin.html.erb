@@ -1,0 +1,24 @@
+<div style="color:black;">
+<h1>Movie List</h1>
+
+<table width="500px" border="1px solid black">
+  <tr>
+    <th>Title</th>
+    <th> </th>
+    <th> </th>
+  </tr>
+
+<%- @movies.each do |movie| %>
+	<tr>
+		<td>
+			<%= link_to (movie.title), movie_path(movie.id) %>
+		</td>
+		<td> 
+			<%= link_to "Delete", { action: :destroy, id: movie.id },
+				method: :delete, data: {confirm: 'Are you sure?' } %>
+		</td>
+	</tr>
+<% end %>
+</table>s
+
+</div>
