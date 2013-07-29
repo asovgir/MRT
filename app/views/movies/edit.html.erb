@@ -1,0 +1,13 @@
+<h1>Edit Movie </h1>
+
+<%= form_for(@movie, :method => "put") do |f| %>
+	<%= f.label :Title, :class => "movieTextStyling" %><br>
+	<%= f.text_field :title, :class => "movieInputStyling", :width => 620 %><br>
+	<%= f.label :description, :class => "movieTextStyling" %><br>
+	<%= f.cktext_area :description, :class => "movieInputStyling" %><br>
+	<p>
+	<%= f.file_field :avatar, :class => "movieInputStyling" %>
+	<p>
+		<%= f.submit "Submit", class: "btn btn-primary" %>
+	</p>
+<% end %>  

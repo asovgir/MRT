@@ -27,6 +27,20 @@ class MoviesController < ApplicationController
 		@movies = Movie.all
 	end
 
+	def edit
+		authenticate
+		@movie = Movie.find(params[:id])
+	end
+
+	def update
+		@movie = Movie.find(params[:id])
+		if @movie.update_attributes(params[:movie])
+			redirect_to @movie
+		else
+			redirect_to edit_movie_path
+		end
+	end
+
 	def destroy
 		authenticate
 		@movie = Movie.find(params[:id])

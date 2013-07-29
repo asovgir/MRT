@@ -6,6 +6,7 @@ MRT::Application.routes.draw do
 
 
   match 'admin', to: 'movies#admin'
+  match 'edit/:id', to: 'movies#edit'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
