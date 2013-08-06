@@ -20,6 +20,7 @@ class MoviesController < ApplicationController
 
 	def show
 		@movie = Movie.find(params[:id])
+		@explanation = Explanation.new
 	end
 
 	def admin

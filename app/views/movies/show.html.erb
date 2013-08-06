@@ -4,10 +4,22 @@
 <p>
 <%= raw @movie.description %>
 </p>
+
+<%= form_for(@explanation) do |f| %>
+	<%= f.label :Synopsis %><br>
+	<%= f.text_field :synopsis %><br>
+
+	<%= f.label :Explanation %><br>
+	<%= f.text_field :explanation %><br>
+
+	<%= f.submit "Add Synopsis" %>
+<% end %>
+
 </section>
 
 <section style="width:45%; right:0; position:absolute;">
 <iframe style="width:100%; height:1000px;" id="explanation">
+
   <p>Your browser does not support iframes.</p>
 </iframe>
 </section>

@@ -1,8 +1,10 @@
 MRT::Application.routes.draw do
 
   get "movies/index"
+  get "explanations/show"
 
   resources :movies
+  resources :explanations
 
 
   match 'admin', to: 'movies#admin'
