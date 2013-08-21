@@ -1,13 +1,32 @@
+
 <h1>Edit Movie </h1>
 
 <%= form_for(@movie, :method => "put") do |f| %>
 	<%= f.label :Title, :class => "movieTextStyling" %><br>
 	<%= f.text_field :title, :class => "movieInputStyling", :width => 620 %><br>
 	<%= f.label :description, :class => "movieTextStyling" %><br>
-	<%= f.cktext_area :description, :class => "movieInputStyling" %><br>
+	<%= f.text_area :description, :class => "movieInputStyling", :id => "movieTextarea" %><br>
+	<input type="button" value="getselection" id="getselection" onclick="getselection()" />
 	<p>
 	<%= f.file_field :avatar, :class => "movieInputStyling" %>
 	<p>
 		<%= f.submit "Submit", class: "btn btn-primary" %>
 	</p>
 <% end %>  
+
+
+<textarea id="123">anil is a big jerk! </textarea>
+
+
+
+<p>
+<div id="display123" style="display:none;"></div>
+<p>
+
+
+<a href="#" id="456">sup</a>
+
+
+
+
+
