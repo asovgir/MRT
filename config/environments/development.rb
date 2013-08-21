@@ -35,5 +35,7 @@ MRT::Application.configure do
   # Expands the lines which load the assets
   config.assets.debug = true
 
+  config.serve_static_assets = false
+
   Paperclip.options[:command_path] = "C:/utils/ImageMagick-6.8.6-Q16"
 end

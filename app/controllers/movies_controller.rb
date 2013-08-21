@@ -31,6 +31,7 @@ class MoviesController < ApplicationController
 	def edit
 		authenticate
 		@movie = Movie.find(params[:id])
+		@explanation = Explanation.new
 	end
 
 	def update

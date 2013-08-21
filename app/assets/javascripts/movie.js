@@ -106,15 +106,20 @@ function getSelectionHtml(editor) {
     return el.getHtml();
 }
 
-$("#456").click(function(){
-    alert( getSelectionHtml(editor) );
+$("#getSelection").click(function(){
+    var value = getSelectionHtml(editor)
+    alert(value)
+    var input = $('#explanation_synopsis');
+        input.val(value);
+            
+
 });
 
 // End Convert Edit Movie description into CKEditor
 
-
-
-
 });
 
 
+$(document).ready(function () {
+  $('a').tooltip({placement:'right'});
+});

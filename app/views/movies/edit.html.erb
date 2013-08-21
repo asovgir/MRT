@@ -1,12 +1,12 @@
 
+<section id="EditContent" style="width:45%; align:left; position:absolute;">
 <h1>Edit Movie </h1>
 
 <%= form_for(@movie, :method => "put") do |f| %>
 	<%= f.label :Title, :class => "movieTextStyling" %><br>
 	<%= f.text_field :title, :class => "movieInputStyling", :width => 620 %><br>
 	<%= f.label :description, :class => "movieTextStyling" %><br>
-	<%= f.text_area :description, :class => "movieInputStyling", :id => "movieTextarea" %><br>
-	<input type="button" value="getselection" id="getselection" onclick="getselection()" />
+	<%= f.text_area :description, :class => "movieInputStyling", :id => "movieTextarea", :rel => "popover", "data-original-title" => "Popover title",  "data-toggle"=>"tooltip" %><br>
 	<p>
 	<%= f.file_field :avatar, :class => "movieInputStyling" %>
 	<p>
@@ -15,18 +15,36 @@
 <% end %>  
 
 
-<textarea id="123">anil is a big jerk! </textarea>
 
 
-
-<p>
-<div id="display123" style="display:none;"></div>
+<a href="#" id="getSelection">Get Selection</a>
 <p>
 
 
-<a href="#" id="456">sup</a>
+<p>
+
+<a href="#" id="example" class="btn btn-success" rel="popover" data-original-title="Twitter Bootstrap Popover" data-toggle="tooltip">hover for popover</a>
+
+
+</section>
 
 
 
+<section style="width:45%; right:0; position:absolute;">
+<!-- <iframe style="width:100%; height:1000px;" id="explanation"></iframe> 
+
+  <p>Your browser does not support iframes.</p>-->
 
 
+<%= form_for(@explanation) do |f| %>
+	<%= f.label :Synopsis %><br>
+	<%= f.text_field :synopsis %><br>
+
+	<%= f.label :Explanation %><br>
+	<%= f.text_field :explanation %><br>
+
+	<%= f.submit "Add Synopsis" %>
+<% end %>
+
+
+</section>
