@@ -28,6 +28,10 @@ class MoviesController < ApplicationController
 		@movies = Movie.all
 	end
 
+	def lasturl
+		@lastexplanation = Movie.all
+	end
+
 	def edit
 		authenticate
 		@movie = Movie.find(params[:id])

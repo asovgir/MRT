@@ -53,13 +53,12 @@ $(document).ready(function() {
 /* Lightbox for add moive */
 $(document).ready(function() {
 	$('#addMovie').click(function() {
-			alert("hi");
 		
                 //Getting the variable's value from a link 
 		var loginBox = $(this).attr('href');
 
 		//Fade in the Popup
-		$(loginBox).fadeIn(300);
+		$('#login-box').fadeIn(300);
 		
 		//Set the center alignment padding + border see css style
 		var popMargTop = ($(loginBox).height() + 24) / 2; 

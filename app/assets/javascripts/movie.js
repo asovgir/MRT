@@ -26,7 +26,7 @@ $(document).ready(function() {
 
 
 
-var e=$("#movieTextarea")[0]; 
+/* var e=$("#movieTextarea")[0]; 
 function getInputSelection(el) {
     var start = 0, end = 0, normalizedValue, range,
         textInputRange, len, endRange;
@@ -71,7 +71,9 @@ function getInputSelection(el) {
         start: start,
         end: end
     };
-}
+} 
+
+
 
 
 function getselection()
@@ -87,7 +89,7 @@ $('#display123').show().append(finalend)
 
 
 
-}
+} */
 
 
 
@@ -104,6 +106,7 @@ function getSelectionHtml(editor) {
         el.append(ranges[i].cloneContents());
     }
     return el.getHtml();
+
 }
 
 $("#getSelection").click(function(){
@@ -111,13 +114,22 @@ $("#getSelection").click(function(){
     alert(value)
     var input = $('#explanation_synopsis');
         input.val(value);
-            
+}); // End Convert Edit Movie description into CKEditor
 
-});
 
-// End Convert Edit Movie description into CKEditor
 
-});
+
+
+
+
+
+
+
+
+
+
+
+}); // close doc ready
 
 
 $(document).ready(function () {
