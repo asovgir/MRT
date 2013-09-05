@@ -114,10 +114,12 @@ $("#getSelection").click(function(){
 // End Convert Edit Movie description into CKEditor
 
 
-$('#addSynopsis').submit(function(ev){
+$('#addSynopsis').click(function(ev){
+    return false; // prevents normal behaviour
 
-    url = $(this).attr('href');
-$('#ExplanationURL').text('url');
+    $('#ExplanationURL').text("url");
+    
+});
     
 
 }); 

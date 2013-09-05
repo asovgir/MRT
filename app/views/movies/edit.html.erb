@@ -2,7 +2,7 @@
 <section id="EditContent" style="width:45%; align:left; position:absolute;">
 <h1>Edit Movie </h1>
 
-<%= form_for(@movie, :method => "put") do |f| %>
+<%= form_for @movie, :method => "put" do |f| %>
 	<%= f.label :Title, :class => "movieTextStyling" %><br>
 	<%= f.text_field :title, :class => "movieInputStyling", :width => 620 %><br>
 	<%= f.label :description, :class => "movieTextStyling" %><br>
@@ -36,15 +36,19 @@
   <p>Your browser does not support iframes.</p>-->
 
 
-<%= form_for(@explanation) do |f| %>
+<%= form_for @explanation, remote: true, :id => 'EditMovieForm' do |f| %>
 	<%= f.label :Synopsis %><br>
 	<%= f.text_field :synopsis %><br>
 
 	<%= f.label :Explanation %><br>
 	<%= f.text_field :explanation %><br>
 
-	<%= f.submit "Add Synopsis" %>
+	<%= f.submit "Add Synopsis", :id=>"addSynopsis" %>
 <% end %>
 
+<div id="ExplanationURL">
+	
+
+</div>
 
 </section>

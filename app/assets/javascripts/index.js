@@ -59,7 +59,7 @@ $(document).ready(function() {
 		var loginBox = $(this).attr('href');
 
 		//Fade in the Popup
-		$(loginBox).fadeIn(300);
+		$(".login-popup").fadeIn(300);
 		
 		//Set the center alignment padding + border see css style
 		var popMargTop = ($(loginBox).height() + 24) / 2; 
