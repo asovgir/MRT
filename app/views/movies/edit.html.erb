@@ -10,7 +10,7 @@
 	<p>
 	<%= f.file_field :avatar, :class => "movieInputStyling" %>
 	<p>
-		<%= f.submit "Submit", class: "btn btn-primary" %>
+		<%= f.submit "Submit", :class => "btn btn-primary" %>
 	</p>
 <% end %>  
 
@@ -26,14 +26,15 @@
 <a href="#" id="example" class="btn btn-success" rel="popover" data-original-title="Twitter Bootstrap Popover" data-toggle="tooltip">hover for popover</a>
 
 
+
+<%= link_to "Last Url", lasturl_path, :id => "newarea" %>
+
 </section>
 
 
 
 <section style="width:45%; right:0; position:absolute;">
-<!-- <iframe style="width:100%; height:1000px;" id="explanation"></iframe> 
 
-  <p>Your browser does not support iframes.</p>-->
 
 
 <%= form_for @explanation, remote: true, :id => 'EditMovieForm' do |f| %>
@@ -43,6 +44,7 @@
 	<%= f.label :Explanation %><br>
 	<%= f.text_field :explanation %><br>
 
+<<<<<<< HEAD
 	<%= f.submit "Add Synopsis", :id=>"addSynopsis" %>
 <% end %>
 
@@ -50,5 +52,13 @@
 	
 
 </div>
+=======
+	<%= f.submit "Add Synopsis", :id => "submitDescription" %>
+<% end %>
+
+/movies/<%= @lastexplanation.last.id %>
+
+
+>>>>>>> annotation
 
 </section>

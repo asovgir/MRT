@@ -12,21 +12,7 @@ $(document).ready(function() {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-var e=$("#movieTextarea")[0]; 
+/* var e=$("#movieTextarea")[0]; 
 function getInputSelection(el) {
     var start = 0, end = 0, normalizedValue, range,
         textInputRange, len, endRange;
@@ -71,7 +57,9 @@ function getInputSelection(el) {
         start: start,
         end: end
     };
-}
+} 
+
+
 
 
 function getselection()
@@ -87,6 +75,11 @@ $('#display123').show().append(finalend)
 
 
 
+<<<<<<< HEAD
+=======
+} */
+
+>>>>>>> annotation
 
 
 // Convert Edit Movie description into CKEditor
@@ -102,17 +95,44 @@ function getSelectionHtml(editor) {
         el.append(ranges[i].cloneContents());
     }
     return el.getHtml();
+
 }
 
 $("#getSelection").click(function(){
     var value = getSelectionHtml(editor)
     alert(value)
     var input = $('#explanation_synopsis');
+<<<<<<< HEAD
         input.val(value);     
 });
+=======
+        input.val(value);
+}); // End Convert Edit Movie description into CKEditor
 
-// End Convert Edit Movie description into CKEditor
 
+
+
+/* $("#submitDescription").on('click', function(){
+    newurl = $(this).attr('href');
+    alert(newurl);
+    $("#newURL").attr("src", url);
+    
+
+    ev.preventDefault();
+}); // End Convert Edit Movie description into CKEditor */
+
+
+
+
+
+
+
+
+
+>>>>>>> annotation
+
+
+<<<<<<< HEAD
 
 $('#addSynopsis').submit(function(ev){
 
@@ -124,6 +144,9 @@ $('#ExplanationURL').text('url');
 
 
 }); // close document.ready
+=======
+}); // close doc ready
+>>>>>>> annotation
 
 
 $(document).ready(function () {

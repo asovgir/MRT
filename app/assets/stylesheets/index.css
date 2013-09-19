@@ -376,7 +376,10 @@ height:600px;
 border:1px solid black;
 float:left;
 position:fixed;
+<<<<<<< HEAD
 
+=======
+>>>>>>> annotation
 z-index:99999;
 /*box-shadow*/
 -webkit-box-shadow:0px 0px 20px #333333;
