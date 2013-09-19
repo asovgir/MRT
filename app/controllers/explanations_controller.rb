@@ -13,14 +13,15 @@ class ExplanationsController < ApplicationController
 
 	def new
 		@explanation = Explanation.new
+
 	end
 
 	def create
-		set_current_movie
+		@current_movie = $movie
 		@explanation = Explanation.new(params[:explanation])
 
 		if @explanation.save
-			redirect_to action: :show, id: @explanation.id
+			redirect_to :back
 		else
 			render 'new'
 		end

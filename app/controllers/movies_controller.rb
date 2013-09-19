@@ -10,6 +10,7 @@ class MoviesController < ApplicationController
 
 	def create
 		@movie = Movie.new(params[:movie])
+		@explanation = Explanation.new
 
 		if @movie.save
 			redirect_to action: :show, id: @movie.id
@@ -29,13 +30,16 @@ class MoviesController < ApplicationController
 	end
 
 	def lasturl
-		@lastexplanation = Movie.all
+		@explanation = Movie.all
 	end
 
 	def edit
 		authenticate
 		@movie = Movie.find(params[:id])
 		@explanation = Explanation.new
+
+		@lastexplanation = Explanation.all
+
 	end
 
 	def update

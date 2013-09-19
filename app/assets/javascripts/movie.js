@@ -12,20 +12,6 @@ $(document).ready(function() {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* var e=$("#movieTextarea")[0]; 
 function getInputSelection(el) {
     var start = 0, end = 0, normalizedValue, range,
@@ -118,6 +104,15 @@ $("#getSelection").click(function(){
 
 
 
+
+/* $("#submitDescription").on('click', function(){
+    newurl = $(this).attr('href');
+    alert(newurl);
+    $("#newURL").attr("src", url);
+    
+
+    ev.preventDefault();
+}); // End Convert Edit Movie description into CKEditor */
 
 
 
