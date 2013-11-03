@@ -7,7 +7,6 @@ gem "twitter-bootstrap-rails"
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'sqlite3'
 
 gem "paperclip", "~> 3.0"
 
@@ -22,6 +21,14 @@ group :assets do
   # gem 'therubyracer', :platforms => :ruby
 
   gem 'uglifier', '>= 1.0.3'
+end
+
+group :production do
+	gem 'pg'
+end
+
+group :development do
+  gem 'sqlite3'
 end
 
 gem 'jquery-rails'
