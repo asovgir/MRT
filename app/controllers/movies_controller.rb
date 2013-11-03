@@ -31,6 +31,7 @@ class MoviesController < ApplicationController
 
 	def lasturl
 		@explanation = Movie.all
+		@lastexplanation = Explanation.all
 	end
 
 	def edit

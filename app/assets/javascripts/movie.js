@@ -105,14 +105,19 @@ $("#getSelection").click(function(){
 
 
 
-/* $("#submitDescription").on('click', function(){
-    newurl = $(this).attr('href');
-    alert(newurl);
-    $("#newURL").attr("src", url);
+$("#new_explanation").on('submit', function(ev){
+    $('#lastExplanation').attr("src", "/lasturl", function(){
+        alert('sup');
+    });
+    ev.preventDefault();
+    // newurl = $(this).attr('href');
+    //  alert(newurl);
+    // $("#newURL").attr("src", url);
+    
     
 
-    ev.preventDefault();
-}); // End Convert Edit Movie description into CKEditor */
+    
+}); // End Convert Edit Movie description into CKEditor 
 
 
 
@@ -126,7 +131,3 @@ $("#getSelection").click(function(){
 
 }); // close doc ready
 
-
-$(document).ready(function () {
-  $('a').tooltip({placement:'right'});
-});
