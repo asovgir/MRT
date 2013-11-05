@@ -9,8 +9,7 @@ color:white;
 }
 .fullwrapper{
 /*background-size*/
--webkit-background-size:/*@@prefixmycss->No equivalent*/
-:;
+-webkit-background-size:/*@@prefixmycss->No equivalent*/;
 /*background-size*/
 -webkit-background-size:/*@@prefixmycss->No equivalent*/;
    -moz-background-size:contain;
