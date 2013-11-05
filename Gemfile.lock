@@ -30,6 +30,14 @@ GEM
       multi_json (~> 1.0)
     arel (3.0.2)
     builder (3.0.4)
+    capybara (2.1.0)
+      mime-types (>= 1.16)
+      nokogiri (>= 1.3.3)
+      rack (>= 1.0.0)
+      rack-test (>= 0.5.4)
+      xpath (~> 2.0)
+    childprocess (0.3.9)
+      ffi (~> 1.0, >= 1.0.11)
     ckeditor (4.0.6)
       mime-types
       orm_adapter
@@ -44,8 +52,10 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.6.3)
+    diff-lcs (1.2.4)
     erubis (2.7.0)
     execjs (2.0.2)
+    ffi (1.9.3)
     hike (1.2.3)
     i18n (0.6.1)
     journey (1.0.4)
@@ -57,7 +67,12 @@ GEM
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
     mime-types (1.25)
+    mini_portile (0.5.2)
     multi_json (1.8.2)
+    nokogiri (1.6.0)
+      mini_portile (~> 0.5.0)
+    nokogiri (1.6.0-x86-mingw32)
+      mini_portile (~> 0.5.0)
     orm_adapter (0.4.0)
     paperclip (3.5.2)
       activemodel (>= 3.0.0)
@@ -97,11 +112,28 @@ GEM
     rake (10.1.0)
     rdoc (3.12.2)
       json (~> 1.4)
+    rspec-core (2.13.1)
+    rspec-expectations (2.13.0)
+      diff-lcs (>= 1.1.3, < 2.0)
+    rspec-mocks (2.13.1)
+    rspec-rails (2.13.1)
+      actionpack (>= 3.0)
+      activesupport (>= 3.0)
+      railties (>= 3.0)
+      rspec-core (~> 2.13.0)
+      rspec-expectations (~> 2.13.0)
+      rspec-mocks (~> 2.13.0)
+    rubyzip (0.9.9)
     sass (3.2.12)
     sass-rails (3.2.6)
       railties (~> 3.2.0)
       sass (>= 3.1.10)
       tilt (~> 1.3)
+    selenium-webdriver (2.35.1)
+      childprocess (>= 0.2.5)
+      multi_json (~> 1.0)
+      rubyzip (< 1.0.0)
+      websocket (~> 1.0.4)
     sprockets (2.2.2)
       hike (~> 1.2)
       multi_json (~> 1.0)
@@ -123,12 +155,16 @@ GEM
     uglifier (2.3.0)
       execjs (>= 0.3.0)
       json (>= 1.8.0)
+    websocket (1.0.7)
+    xpath (2.0.0)
+      nokogiri (~> 1.3)
 
 PLATFORMS
   ruby
   x86-mingw32
 
 DEPENDENCIES
+  capybara (= 2.1.0)
   ckeditor
   coffee-rails (~> 3.2.1)
   jquery-rails
@@ -136,7 +172,9 @@ DEPENDENCIES
   pg
   rails (= 3.2.13)
   rails_12factor
+  rspec-rails (= 2.13.1)
   sass-rails (~> 3.2.3)
+  selenium-webdriver (= 2.35.1)
   sqlite3
   twitter-bootstrap-rails
   uglifier (>= 1.0.3)
