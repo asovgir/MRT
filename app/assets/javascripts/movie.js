@@ -47,9 +47,9 @@ $('#submitDescription').click(function(){
       data: { 
         explanation: {'synopsis': synopsis}
       }
-    }).done(function( msg ) {
+    }).done(function() {
       alert('successflly submited');
-      $('#lastExplanation').attr("src", "http://localhost:3000/lasturl");
+      $('#lastExplanation').attr("src", "/lasturl");
     }); 
     return false;
 });
