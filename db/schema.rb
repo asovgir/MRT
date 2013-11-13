@@ -14,6 +14,7 @@
 ActiveRecord::Schema.define(:version => 20130730045834) do
 
   create_table "explanations", :force => true do |t|
+    t.integer  "movie_id"
     t.string   "synopsis"
     t.string   "explanation"
     t.datetime "created_at",  :null => false
