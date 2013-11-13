@@ -104,20 +104,28 @@ $("#getSelection").click(function(){
 
 
 
+$('#submitDescription').click(function(){
+    var synopsis = $('input#explanation_synopsis').val();
+    var explanation = $('input#explanation_explanation').val();
+    if (synopsis === ""){
+        alert(dataString);
+    }
 
-$("#new_explanation").on('submit', function(ev){
-    $('#lastExplanation').attr("src", "/lasturl", function(){
-        alert('sup');
-    });
+
+    $.ajax({
+      type: "POST",
+      url: "/explanations",
+      data: { 
+        explanation: {'synopsis': synopsis}
+      }
+    }).done(function( msg ) {
+      alert('successflly submited');
+      $('#lastExplanation').attr("src", "http://localhost:3000/lasturl");
+    }); 
     return false;
-    // newurl = $(this).attr('href');
-    //  alert(newurl);
-    // $("#newURL").attr("src", url);
-    
-    
+});
 
-    
-}); // End Convert Edit Movie description into CKEditor 
+
 
 
 
