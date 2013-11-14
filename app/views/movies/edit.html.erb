@@ -1,3 +1,5 @@
+<%= render 'partials/header' %>
+
 
 <section id="EditContent" style="width:45%; align:left; position:absolute;">
 <h1>Edit Movie </h1>
@@ -37,13 +39,13 @@
 
 
 <%= form_for(@explanation) do |f| %>
-	<%= f.label :Synopsis %><br>
-	<%= f.text_field :synopsis %><br>
+	<%#= f.label :Synopsis %><br>
+	<%#= f.text_field :synopsis %><br>
 
 	<%= f.label :Explanation %><br>
 	<%= f.text_field :explanation %><br>
 
-	<%= f.submit "Add Synopsis", :id => "submitDescription" %>
+	<%= f.submit "Add Explanation", :id => "submitDescription" %>
 <% end %>
 
 <iframe width="100%" id="lastExplanation">

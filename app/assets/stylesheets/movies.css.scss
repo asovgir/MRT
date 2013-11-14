@@ -1,3 +1,19 @@
 // Place all the styles related to the Movies controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+a:active{
+	color:red;
+}
+
+section#summary {
+	margin:20px 0 0 20px;
+	font-size:18px;
+	font-family:ProximaNova-Light;
+}
+
+#movie-title {
+	
+	font-size:40px;
+	color:#5dbcd0;
+}

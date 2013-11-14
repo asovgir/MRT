@@ -1,7 +1,12 @@
 $(document).ready(function() {
-	var url;
+	
+    // highlight clicked link
+    $('section#summary a').click(function(){
+        $('section#summary a').css("color", "#0088cc");
+        $(this).css("color", "red");
+    })
 
-
+    var url;
 	// show explanation iframe
 	$('#summary a').click(function(ev){
 		url = $(this).attr('href');

@@ -1,19 +1,12 @@
 
+<%= render 'partials/header' %>
+
 <section id="summary" style="width:45%; align:left; position:absolute;">
-<%= @movie.title %>
-<p>
+<div id="movie-title"><%= @movie.title %></div>
+<p><br>
 <%= raw @movie.description %>
 </p>
 
-<%= form_for(@explanation) do |f| %>
-	<%= f.label :Synopsis %><br>
-	<%= f.text_field :synopsis %><br>
-
-	<%= f.label :Explanation %><br>
-	<%= f.text_field :explanation %><br>
-
-	<%= f.submit "Add Synopsis" %>
-<% end %>
 
 </section>
 
