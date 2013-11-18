@@ -1,7 +1,3 @@
-
-<!DOCTYPE html>
-
-
 <%= render 'partials/header' %>
 
 <div class="pictureframe">
@@ -34,7 +30,7 @@
 									<%= f.label :Title, :class => "movieTextStyling" %><br>
 									<%= f.text_field :title, :class => "movieInputStyling", :width => 420 %><br>
 									<%= f.label :description, :class => "movieTextStyling" %><br>
-									<%= f.text_area :description, :class => "movieInputStyling" %>
+									<%= f.text_area :description, :id => "MovieDescription", :class => "movieInputStyling" %>
 									<%= f.file_field :avatar, :class => "movieInputStyling" %>
 									<p>
 										<%= f.submit "Submit", class: "btn btn-primary" %>

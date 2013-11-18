@@ -16,57 +16,30 @@ $(document).ready(function() {
 	});
 
 
-var editor = CKEDITOR.replace('movieTextarea');
+    var editor = CKEDITOR.replace('movieTextarea'); // convert textarea into CKEditor
 
-function getSelectionHtml(editor) {
-    var sel = editor.getSelection();
-    var ranges = sel.getRanges();
-    var el = new CKEDITOR.dom.element("div");
-    for (var i = 0, len = ranges.length; i < len; ++i) {
-        el.append(ranges[i].cloneContents());
-    }
-    return el.getHtml();
 
-}
 
-$("#getSelection").click(function(){
-    var value = getSelectionHtml(editor)
-    alert(value)
-    var input = $('#explanation_synopsis');
-        input.val(value);
-}); // End Convert Edit Movie description into CKEditor
 
 
 
 $('#submitDescription').click(function(){
-    var synopsis = $('input#explanation_synopsis').val();
-    var explanation = $('input#explanation_explanation').val();
-    if (synopsis === ""){
-        alert(dataString);
-    }
 
+
+    var explanation = $('#explanation_explanation').val();
 
     $.ajax({
       type: "POST",
       url: "/explanations",
       data: { 
-        explanation: {'synopsis': synopsis}
+        explanation: {'explanation': explanation}
       }
     }).done(function() {
-      alert('successflly submited');
+      alert(explanation);
       $('#lastExplanation').attr("src", "/lasturl");
     }); 
     return false;
 });
-
-
-
-
-
-
-
-
-
 
 
 

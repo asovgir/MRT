@@ -39,21 +39,14 @@ $(document).ready(function() {
     $('#my-carousel-2').carousel();
 });
 
-/* $(document).ready(function() {
-	var myWidth = {};
-	var countLI = {};
-	myWidth.maxh = $("#my-carousel-2 .mask").width();
-	countLI.count = $("#my-carousel-2 ul li").filter(function () {
-			return $(this).position().left + $(this).width() < myWidth.maxh;
-		}).length
-	
-	console.log(countLI.count);
-}); */
+
 
 /* Lightbox for add moive */
 $(document).ready(function() {
 	$('#addMovie').click(function() {
-		
+
+
+		var editor = CKEDITOR.replace('MovieDescription');
                 //Getting the variable's value from a link 
 		var loginBox = $(this).attr('href');
 
