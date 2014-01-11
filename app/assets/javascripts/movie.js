@@ -35,7 +35,6 @@ $('#submitDescription').click(function(){
         explanation: {'explanation': explanation}
       }
     }).done(function() {
-      alert(explanation);
       $('#lastExplanation').attr("src", "/lasturl");
     }); 
     return false;
