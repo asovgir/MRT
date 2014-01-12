@@ -29,7 +29,7 @@
 	<%= form_for(@explanation) do |f| %>
 
 		<%= f.label :Explanation %><br>
-		<%= f.text_area :explanation %><br>
+		<%= f.cktext_area :explanation %><br>
 
 		<%= f.submit "Add Explanation", :id => "submitDescription" %>
 	<% end %>
