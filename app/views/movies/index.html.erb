@@ -12,6 +12,19 @@
 
 <div class="container">
 	<div class="category">
+		<div id="login-box" class="login-popup"> <!-- Popup to Add Movies -->
+	        <a href="#" class="close">x</a>
+	                <%= form_for(@movie) do |f| %>
+						<%= f.label :Title, :class => "movieTextStyling" %><br>
+						<%= f.text_field :title, :class => "movieInputStyling", :width => 420 %><br>
+						<%= f.label :description, :class => "movieTextStyling" %><br>
+						<%= f.text_area :description, :id => "MovieDescription", :class => "movieInputStyling" %>
+						<%= f.file_field :avatar, :class => "movieInputStyling" %>
+						<p>
+							<%= f.submit "Submit", class: "btn btn-primary" %>
+						</p>
+					<% end %>    
+		</div>
 		<div class="block1"></div>
 		<div class="block2">	
 			<ul id="search">	
@@ -24,19 +37,7 @@
 			<div id="lightbox-wrapper">
 				<a href="#" class="btn btn-success" id="addMovie">Add Movie</a>
 
-				<div id="login-box" class="login-popup">
-				        <a href="#" class="close">x</a>
-				                <%= form_for(@movie) do |f| %>
-									<%= f.label :Title, :class => "movieTextStyling" %><br>
-									<%= f.text_field :title, :class => "movieInputStyling", :width => 420 %><br>
-									<%= f.label :description, :class => "movieTextStyling" %><br>
-									<%= f.text_area :description, :id => "MovieDescription", :class => "movieInputStyling" %>
-									<%= f.file_field :avatar, :class => "movieInputStyling" %>
-									<p>
-										<%= f.submit "Submit", class: "btn btn-primary" %>
-									</p>
-								<% end %>    
-				</div>
+
 			</div>
  
 		</div>
