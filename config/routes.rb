@@ -1,5 +1,7 @@
 MRT::Application.routes.draw do
 
+  get "users/new"
+
   get "movies/index"
   get "explanations/show"
 
