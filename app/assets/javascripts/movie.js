@@ -17,6 +17,7 @@ $(document).ready(function() {
 
 
     var editor = CKEDITOR.replace('movieTextarea'); // convert textarea into CKEditor
+    var explanation = CKEDITOR.replace('explanation_explanation'); // convert textarea into CKEditor
 
 
 
@@ -24,10 +25,8 @@ $(document).ready(function() {
 
 
 $('#submitDescription').click(function(){
-
-
-    var explanation = $('#explanation_explanation').val();
-
+    var explanation = CKEDITOR.instances['explanation_explanation'].getData();
+    alert(explanation);
     $.ajax({
       type: "POST",
       url: "/explanations",
