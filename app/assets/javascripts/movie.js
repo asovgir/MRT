@@ -26,7 +26,6 @@ $(document).ready(function() {
 
 $('#submitDescription').click(function(){
     var explanation = CKEDITOR.instances['explanation_explanation'].getData();
-    alert(explanation);
     $.ajax({
       type: "POST",
       url: "/explanations",
