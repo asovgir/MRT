@@ -65,6 +65,8 @@ MRT::Application.configure do
   # with SQLite, MySQL, and PostgreSQL)
   # config.active_record.auto_explain_threshold_in_seconds = 0.5
 
+  Paperclip.options[:command_path] = "C:/utils/ImageMagick-6.8.6-Q16"
+
   # Amazon S3 settings for Paperclip uploads
   config.paperclip_defaults = {
     :storage => :s3,

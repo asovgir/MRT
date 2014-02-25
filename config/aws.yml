@@ -1,0 +1,15 @@
+
+development:
+  AWS_ACCESS_KEY_ID: "AKIAIY5UDW6KKM2V5KPA"
+  AWS_SECRET_ACCESS_KEY: "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"
+  AWS_BUCKET: "movieroundtable"
+
+
+production:
+  AWS_ACCESS_KEY_ID: "AKIAIY5UDW6KKM2V5KPA"
+  AWS_SECRET_ACCESS_KEY: "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"
+  AWS_BUCKET: "movieroundtable"
+
+
+
+

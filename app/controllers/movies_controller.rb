@@ -6,19 +6,23 @@ class MoviesController < ApplicationController
 
 	def new
 		@movie = Movie.new
-		add_attachment :avatar
+
 	end
 
 	def create
 		@movie = Movie.new(params[:movie])
 		@explanation = Explanation.new
-		add_attachment :avatar
+
 
 		if @movie.save
 			redirect_to action: :show, id: @movie.id
 		else
 			render 'new'
 		end
+	end
+
+	def avatar
+		@avatar = Movie.find(params[:id])
 	end
 
 	def show

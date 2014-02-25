@@ -21,9 +21,9 @@ end
 gem 'jquery-rails'
 gem 'ckeditor'
 gem "twitter-bootstrap-rails"
-gem "paperclip", "~> 3.0"
+gem "paperclip", "~> 3.5.3"
 gem 'aws-sdk'
-gem 'rmagick', '2.13.2'
+gem 'rmagick'
 
 group :production do
 	gem 'pg'
