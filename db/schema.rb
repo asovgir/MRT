@@ -11,12 +11,12 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20140124045121) do
+ActiveRecord::Schema.define(:version => 20140201035206) do
 
   create_table "explanations", :force => true do |t|
     t.integer  "movie_id"
     t.string   "synopsis"
-    t.string   "explanation"
+    t.text     "explanation" , :limit => nil
     t.datetime "created_at",  :null => false
     t.datetime "updated_at",  :null => false
   end

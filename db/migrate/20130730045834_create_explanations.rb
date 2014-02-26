@@ -4,7 +4,7 @@ class CreateExplanations < ActiveRecord::Migration
     	
 		t.belongs_to :movie
     	t.string :synopsis
-    	t.string :explanation
+    	t.text :explanation
 
       t.timestamps
     end
