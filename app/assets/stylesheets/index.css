@@ -313,10 +313,13 @@ position:relative;
 	display:none;
 }
 
-.content_names{
+.content_names li{
 	height:50px;
 	text-align:center;
+  font-size:20px;
+  padding-top:10px;
 }
+
 
 .category{
 position:relative;

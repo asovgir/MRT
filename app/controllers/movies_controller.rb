@@ -3,6 +3,11 @@ class MoviesController < ApplicationController
 		@movies = Movie.order('created_at DESC')
 	end
 
+	def load_suggestions
+	  @suggestions = Movie.select(:title)
+	  render json: @suggestions
+	end
+
 	def new
 		@movie = Movie.new
 

@@ -40,6 +40,29 @@ $(document).ready(function() {
 });
 
 
+/* Search autocomplete */
+$(document).ready(function(){
+
+// instantiate the bloodhound suggestion engine
+	var movies = new Bloodhound({
+	  datumTokenizer: function(d) { return Bloodhound.tokenizers.whitespace(d.title); },
+	  queryTokenizer: Bloodhound.tokenizers.whitespace,
+	  limit: 10,
+	  prefetch: 'movielist.json'
+	});
+	 
+	// initialize the bloodhound suggestion engine
+	movies.initialize();
+	 
+	// instantiate the typeahead UI
+	$('.block2 .typeahead').typeahead(null, {
+	  name: 'title',
+	  displayKey: 'title',
+	  source: movies.ttAdapter()
+	});
+
+});
+
 
 /* Lightbox for add moive */
 $(document).ready(function() {
