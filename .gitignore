@@ -15,6 +15,7 @@
 /tmp
 
 config/aws.yml
+aws.yml
 
 
 
