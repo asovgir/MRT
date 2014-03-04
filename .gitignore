@@ -14,9 +14,9 @@
 /log/*.log
 /tmp
 
-config/aws.yml
-aws.yml
 
+aws.yml
+movies_controller.rb
 
 
 
