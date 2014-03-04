@@ -15,8 +15,8 @@
 /tmp
 
 
-aws.yml
-movies_controller.rb
+config/aws.yml
+app/controllers/movies_controller.rb
 
 
 
