@@ -17,6 +17,7 @@
 
 config/aws.yml
 app/controllers/movies_controller.rb
+controllers/movies_controller.rb
 
 
 

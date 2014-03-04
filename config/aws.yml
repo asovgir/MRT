@@ -7,7 +7,7 @@ development:
 
 production:
   AWS_ACCESS_KEY_ID: "AKIAIIJG3RNQQD3G4BZA"
-  AWS_SECRET_ACCESS_KEY: "Mtestinfo"
+  AWS_SECRET_ACCESS_KEY: "newtest"
   AWS_BUCKET: "moviert"
 
 
