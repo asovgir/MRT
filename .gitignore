@@ -17,6 +17,7 @@
 
 aws.yml
 movies_controller.rb
+aws-sdk.rb
 
 
 
