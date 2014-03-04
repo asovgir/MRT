@@ -1,6 +1,5 @@
 class MoviesController < ApplicationController
 	def index
-		@movie = Movie.new
 		@movies = Movie.order('created_at DESC')
 	end
 
@@ -32,6 +31,7 @@ class MoviesController < ApplicationController
 
 	def admin
 		authenticate
+		@movie = Movie.new
 		@movies = Movie.all
 	end
 
