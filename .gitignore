@@ -15,10 +15,10 @@
 /tmp
 
 
-config/aws.yml
+/config/aws.yml
 aws.yml
-app/controllers/movies_controller.rb
-controllers/movies_controller.rb
+/app/controllers/movies_controller.rb
+/controllers/movies_controller.rb
 movies_controller.rb
 
 
