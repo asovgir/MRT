@@ -55,7 +55,7 @@ $(document).ready(function(){
 	movies.initialize();
 	 
 	// instantiate the typeahead UI
-	$('.block2 .typeahead').typeahead(null, {
+	$('.block3 .typeahead').typeahead(null, {
 	  name: 'title',
 	  displayKey: 'title',
 	  source: movies.ttAdapter()

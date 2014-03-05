@@ -34,6 +34,10 @@ class MoviesController < ApplicationController
 		@explanation = Explanation.new
 	end
 
+	def search
+		@movies = Movie.search params[:search]
+	end
+
 	def admin
 		authenticate
 		@movie = Movie.new

@@ -7,4 +7,10 @@ class Movie < ActiveRecord::Base
 					 :bucket => 'moviert',
 					 :aws_credentials => "#{Rails.root}/config/aws.yml"
   has_many :explanations
+
+  def self.search(search)
+  	search_condition = "%" + search + "%"
+  	find(:all, :conditions => ['title LIKE ?', search_condition])
+  end
+  
 end

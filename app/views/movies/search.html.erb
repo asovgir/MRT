@@ -1,0 +1,6 @@
+<ul>
+    <% @movies.each do |movie| %>
+  <li><%= link_to movie.title, 
+    :action => 'show', :id => movie.id  %></li>
+  <% end %>
+  </ul>

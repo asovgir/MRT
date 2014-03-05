@@ -12,7 +12,8 @@ MRT::Application.routes.draw do
   match 'edit/:id', to: 'movies#edit'
   match 'lasturl', to: 'movies#lasturl'
   match 'movielist', to: 'movies#load_suggestions'
- 
+  match 'search', to: 'movies#search'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
