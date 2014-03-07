@@ -2,18 +2,33 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-a:active{
-	color:red;
+
+html, body {
+	height: 100%;
+	overflow: hidden;
 }
 
-section#summary {
-	margin:20px 0 0 20px;
+
+#summary{
+	height:95%;
+	padding-top:15px;
+	margin:0px 0 0 20px;
+	padding-right:6px;
 	font-size:18px;
 	font-family:ProximaNova-Light;
+	overflow:auto;
+}
+
+a:active{
+	color:red;
 }
 
 #movie-title {
 	
 	font-size:40px;
 	color:#5dbcd0;
+}
+
+#explanation{
+	height:98%;
 }

@@ -15,5 +15,4 @@
 //= require ckeditor/init
 //= require ckeditor/adapters/jquery
 //= require twitter/bootstrap
-//= require typeahead
 //= require_tree .

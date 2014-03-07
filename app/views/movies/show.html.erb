@@ -1,7 +1,7 @@
 
 <%= render 'partials/header' %>
-
-<section id="summary" style="width:45%; align:left; position:absolute;">
+<div id="wrapper">
+<section id="summary" class="section" style="width:49%; align:left; position:absolute;">
 <div id="movie-title"><%= @movie.title %></div>
 <p><br>
 <%= raw @movie.description %>
@@ -12,9 +12,10 @@
 
 
 
-<section style="width:45%; right:0; position:absolute;">
-<iframe style="width:100%; height:1000px;" id="explanation">
+<section style="width:49%; right:0; position:absolute;" id="explanation">
+<iframe style="width:100%;" class="section" >
 
   <p>Your browser does not support iframes.</p>
 </iframe>
 </section>
+</div>
