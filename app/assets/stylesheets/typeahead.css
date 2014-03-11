@@ -1,6 +1,13 @@
 /* custom font! */
 /* ------------ */
 
+span.twitter-typeahead{
+  float:left;
+  padding-left:50px;
+  margin-top:-10px;
+}
+
+
 @font-face {
   font-family: Prociono;
   src: url(../font/Prociono-Regular-webfont.ttf);

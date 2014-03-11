@@ -13,17 +13,11 @@
 <div class="container">
 	<div class="category">
 		<div class="block1"></div>
-		<div class="block2">	
-			<ul id="search">	
-				<!-- <form class="navbar-search" action = "" method="GET">
-					<input type="text" class="typeahead" placeholder="Search Movie" name="q">
-				</form> -->
-			</ul>
-		</div>
+
 		<div class="block3">
  			<%= form_tag :controller => 'movies', :action=>'search', :method => 'get' do %>
  				<%= text_field_tag :search, params[:search], :id=> 'search_field', :class=>'typeahead' %>
- 				<%= submit_tag "Search", :name => nil %> 
+ 				<%= submit_tag "Search", :name => nil, :class =>'btn-medium btn-success', :id => "submit-search" %> 
 			 <% end %> 
 		</div>
 		<div class="arrowsandcontent">

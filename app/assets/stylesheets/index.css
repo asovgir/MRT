@@ -352,9 +352,14 @@ text-align:center;
 position:relative;
 float:left;
 border:0px solid red;
-width:25%;
+width:90%;
 padding-top:30px;
 margin-left:3.8%;
+}
+
+#submit-search{
+  float:right;
+  margin-top:-42px;
 }
 
 #movie_form ul{

@@ -1,4 +1,11 @@
 $(document).ready(function() {
+
+  // Set #summary to height of viewport
+  var wH = $(window).height();
+  var height = (wH - 127);
+  $('#summary').css("height", height);
+  $('#explanation_section').css("height", height);
+  $('#explanation').css("height", height);
 	
     // highlight clicked link
     $('section#summary a').click(function(){
