@@ -1,5 +1,8 @@
 require File.expand_path('../boot', __FILE__)
 
+# added to help fix 'authenticate' spec issues
+require 'devise'
+
 require 'rails/all'
 
 if defined?(Bundler)
