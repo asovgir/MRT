@@ -4,15 +4,18 @@ MRT::Application.routes.draw do
   get "explanations/show"
 
 
+
   resources :movies
   resources :explanations
-
+  resources :users
+  match '/signup', to: 'users#new',     via: 'get'
 
   match 'admin', to: 'movies#admin'
   match 'edit/:id', to: 'movies#edit'
   match 'lasturl', to: 'movies#lasturl'
   match 'movielist', to: 'movies#load_suggestions'
   match 'search', to: 'movies#search'
+
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
